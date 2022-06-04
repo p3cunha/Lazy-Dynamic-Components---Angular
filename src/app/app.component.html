@@ -4,5 +4,5 @@
 
 <app-dynamic-component
   [id]="selectedComponent | async"
-  [lazyImports]="lazyImports"
+  [lazyImports]="getLazyImports()"
 ></app-dynamic-component>
