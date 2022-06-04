@@ -1,0 +1,8 @@
+<button (click)="selectedComponent.next('Hello')">Hello</button>
+<button (click)="selectedComponent.next('Goodbye')">Good bye</button>
+<button (click)="selectedComponent.next('')">Kill Modules</button>
+
+<app-dynamic-component
+  [id]="selectedComponent | async"
+  [lazyImports]="lazyImports"
+></app-dynamic-component>
