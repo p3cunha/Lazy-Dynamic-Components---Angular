@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { LazyImport, LazyImports } from './dynamic-compoents/dynamic-item';
+import { LazyImport, LazyImports } from './dynamic-compoents/dynamic.model';
 
 @Injectable()
 export class DynamicService implements LazyImports {

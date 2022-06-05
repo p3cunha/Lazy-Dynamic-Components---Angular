@@ -11,7 +11,7 @@ import {
 } from '@angular/core';
 
 import { DynamicDirective } from './dynamic.directive';
-import { LazyImport } from './dynamic-item';
+import { LazyImport } from './dynamic.model';
 
 interface AdComponent {
   data: any;
@@ -36,7 +36,6 @@ export class DynamicComponent implements OnChanges {
   constructor(private injector: Injector) {}
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes);
     if (changes.id) this.loadComponent();
   }
 
